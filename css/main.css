@@ -7,3 +7,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+/* --- class selector --- */
+.italic {
+  font-style: italic;
+}
+/*
+
+/* class selector */
+/*
