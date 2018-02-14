@@ -2,6 +2,15 @@
 
 /* flexible images */
 
+header figure {
+  text-align: center;
+}
+
+header figcaption {
+  text-align: left
+}
+
+
 img {
   width: auto;
   max-width: 100%;
@@ -16,4 +25,19 @@ img {
 /*
 
 /* class selector */
-/*
+
+#ingredients {
+  background: #ccc;
+  padding: 1em;
+}
+
+#ingredients ul {
+  list-style: circle;
+  padding-left: 1em;
+}
+
+#ingredients li {
+  color: #fff;
+  line-height: 1.5;
+  margin-top:.5em;
+}
