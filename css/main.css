@@ -1,6 +1,88 @@
 /* --- global styles --- */
 
+
+
+/* --- resets --- */
+
+
+html {
+  font: 100%/1.15 san-serif;
+}
+
+body,
+figure,
+figcaption {
+  margin: 0;
+}
+
 /* flexible images */
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; /* remove descender spacing under photo between border */
+}
+
+/* nav */
+nav {
+  margin-top:2em;
+}
+
+nav h2 {
+  padding-bottom: .125em;
+  border-bottom: none;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding-top: .5em;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav li {
+  display:inline;
+  margin: 0 .125em;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1em;
+  border: 1px solid #000;
+  border-radius: .7em;
+}
+
+nav a:hover,
+nav a:focus{
+  background-color: #fff;
+}
+
+/* fig-1 */
+
+#fig-1 {
+  max-width: 60em;   /* max-width of img and border */
+  text-align: center;
+  margin: 0 auto;    /* centering image */
+}
+
+#fig-1 div {
+  border: 1em solid #999;
+}
+
+.crop-square-1 {
+  width: 24em;
+  height: 24em;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.crop-square-1 img {     /* control image directly */
+  max-width: 100%;
+  margin: -3em 0 0 -3em;    /* crop */
+}
 
 header figure {
   text-align: center;
@@ -10,12 +92,6 @@ header figcaption {
   text-align: left
 }
 
-
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-}
 
 
 /* --- class selector --- */
