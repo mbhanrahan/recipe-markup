@@ -4,16 +4,21 @@
 
 /* --- resets --- */
 
-
-html {
-  font: 100%/1.15 san-serif;
-}
-
 body,
 figure,
 figcaption {
   margin: 0;
 }
+
+body {
+  background-color: #9cf;
+}
+article {
+  margin: 2em 10em 2em 10em;  /* top right bottom left */
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
 
 /* flexible images */
 
@@ -26,13 +31,7 @@ img {
 
 /* nav */
 nav {
-  margin-top:2em;
-}
-
-nav h2 {
-  padding-bottom: .125em;
-  border-bottom: none;
-  margin: 0;
+  margin: 2em 3em;
 }
 
 nav ul {
@@ -43,68 +42,97 @@ nav ul {
 }
 
 nav li {
-  display:inline;
+  display: inline;
   margin: 0 .125em;
 }
 
 nav a {
   display: inline-block;
   text-decoration: none;
+  font-family: sans-serif;
   padding: 1em;
-  border: 1px solid #000;
+  border: 2px solid #fff;
   border-radius: .7em;
 }
 
 nav a:hover,
-nav a:focus{
-  background-color: #fff;
+nav a:focus {
+  background-color: #ccf;
 }
+
+h1 {
+  padding: .5em 0;
+  margin: 1em 2em 1em 2em;
+  border: double #fff;
+  border-width: .2em;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: #609;
+}
+
 
 /* fig-1 */
 
-#fig-1 {
+/*#fig-1 {
   max-width: 60em;   /* max-width of img and border */
-  text-align: center;
-  margin: 0 auto;    /* centering image */
-}
+/*  margin: 0 auto;    /* centering image */
+/*}
 
 #fig-1 div {
-  border: 1em solid #999;
-}
+  border: 1em solid #fff;
+} */
 
-.crop-square-1 {
+
+
+#image {
   width: 24em;
   height: 24em;
   margin: 0 auto;
   overflow: hidden;
 }
 
-.crop-square-1 img {     /* control image directly */
-  max-width: 100%;
-  margin: -3em 0 0 -3em;    /* crop */
-}
-
-header figure {
-  text-align: center;
-}
 
 header figcaption {
-  text-align: left
+  text-align: left;
+  padding-top: .5em;
+  font-size: .75em;
+  font-family: sans-serif;
 }
 
 
-
-/* --- class selector --- */
-.italic {
-  font-style: italic;
-}
-/*
 
 /* class selector */
 
-#ingredients {
-  background: #ccc;
+#introduction {
   padding: 1em;
+  text-align: left;
+  color: #609;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  border-bottom: .27em double #fff;
+}
+
+#details {
+  padding: 2em 3em 1em 7em;
+  font-size: 1em;
+}
+
+#details ul {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+#details li {
+  color: #000;
+  list-style: circle;
+  line-height: 1.5;
+}
+
+
+#ingredients {
+  padding: 0 3em 1em 7em;
 }
 
 #ingredients ul {
@@ -113,7 +141,48 @@ header figcaption {
 }
 
 #ingredients li {
-  color: #fff;
+  color: #000;
   line-height: 1.5;
   margin-top:.5em;
+}
+
+
+
+#directions {
+  padding: 0 3em 1em 7em;
+}
+
+#directions ol {
+  list-style: ;
+  padding-left: 1em;
+}
+
+#directions li {
+  color: #000;
+  line-height: 1.5;
+  margin-top: .5em;
+}
+
+
+#additional-information {
+  padding: 2em 1em 1em 7em;
+  color: #000;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #609;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #609;
+}
+
+#ingredients,
+#directions {
+  float: left;
+  width: 100%;
 }
